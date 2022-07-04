@@ -13,6 +13,7 @@ app.get('/', (req, res) => {
 
 app.use('/api/v1/watermark-video', require('./routes/api/video'));
 app.use('/api/v1/watermark-pdf', require('./routes/api/pdf'));
+app.use('/api/v1/watermark-image', require('./routes/api/image'));
 
 const PORT = process.env.PORT || 5000;
 

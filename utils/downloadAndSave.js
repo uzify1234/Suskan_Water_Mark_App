@@ -14,7 +14,7 @@ const downloadAndSave = async (id, uri) => {
 	});
 	try {
 		await downloader.download();
-		return filename;
+		return `./tmp/downloads/${filename}`;
 	} catch (error) {
 		console.log('Download failed', error.msg);
 	}
